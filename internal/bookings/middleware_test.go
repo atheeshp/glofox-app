@@ -25,7 +25,7 @@ func TestValidateBooking(t *testing.T) {
                 "member": "John Doe",
                 "date": "2024-06-10"
             }`,
-			expectCode: http.StatusOK, // Middleware should pass to next handler
+			expectCode: http.StatusOK,
 			expectMsg:  "",
 		},
 		{
@@ -33,7 +33,7 @@ func TestValidateBooking(t *testing.T) {
 			payload: `{
                 "member": "John Doe",
                 "date": 2024-06-10
-            }`, // Wrong date format (integer instead of string)
+            }`,
 			expectCode: http.StatusBadRequest,
 			expectMsg:  "Invalid request format",
 		},
@@ -42,7 +42,7 @@ func TestValidateBooking(t *testing.T) {
 			payload: `{
                 "member": "12345",
                 "date": "2024-06-10"
-            }`, // Member name contains numbers
+            }`,
 			expectCode: http.StatusBadRequest,
 			expectMsg:  "class name should contain only letters and spaces",
 		},

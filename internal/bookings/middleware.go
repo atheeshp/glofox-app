@@ -9,7 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// ValidateCreateClass is a middleware which validates the class request
+// ValidateCreateClass is a middleware which validates the booking request
 func ValidateBooking(c *gin.Context) {
 	var req reqBooking
 	if err := c.ShouldBindJSON(&req); err != nil {

@@ -9,6 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// CreateBooking is a handler method for creating bookings
 func CreateBooking(c *gin.Context) {
 	parsedBody, ok := c.Get("parsedBody")
 	if !ok {

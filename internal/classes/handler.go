@@ -9,6 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// CreateClass is a handler function to create class
 func CreateClass(c *gin.Context) {
 	var parsedBody, ok = c.Get("parsedBody")
 	if !ok {
