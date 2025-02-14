@@ -6,7 +6,7 @@
 
 Ensure you have the following installed:
 
-- [Go](https://go.dev/dl/) (1.23 recommended)
+- [Go](https://go.dev/dl/) (1.23 used in this project)
 - [cURL](https://curl.se/) (optional, for command-line API testing)
 
 ### Installation & Running the Server
